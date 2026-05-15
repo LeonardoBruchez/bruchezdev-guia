@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 2.5rem;
+  border-top: 0.1px solid rgb(63, 63, 63);
+  border-bottom: 0.1px solid rgb(63, 63, 63);
+  font-family: "Inter", sans-serif;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.stat h2 span {
+  color: #adff2f;
+}
+
+.stat p {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+}

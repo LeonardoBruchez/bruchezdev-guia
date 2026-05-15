@@ -1,0 +1,39 @@
+.btnBase {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+  width: 200px;
+  height: 40px;
+}
+
+.btnBase:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.verde {
+  background-color: #adff2f;
+  color: #000;
+  border-radius: 8px;
+}
+.cinza {
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 0.3px solid #2a2a2a;
+  border-radius: 8px;
+}
+
+@media (min-width: 1000px) {
+  .btnBase {
+    width: 400px;
+    height: 50px;
+    font-size: 20px;
+  }
+}

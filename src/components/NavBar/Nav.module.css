@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2.5rem;
+  border-bottom: 0.1px solid rgb(63, 63, 63);
+  font-family: "Inter", sans-serif;
+}
+h1 {
+  cursor: pointer;
+}
+
+.container strong {
+  color: greenyellow;
+}
+
+.container > nav {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.container a {
+  color: rgb(115, 175, 24);
+  transition:
+    color 700ms ease,
+    transform 0.4s ease;
+}
+
+.container a:hover {
+  transform: scale(1.1);
+  color: rgb(166, 255, 33);
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+  .container > nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

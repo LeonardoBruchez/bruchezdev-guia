@@ -1,0 +1,79 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: transparent;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.item:hover {
+  border-color: #444;
+  background-color: #111;
+}
+
+.badge {
+  background-color: rgba(173, 255, 47, 0.1);
+  color: #adff2f;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 1.5rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 0.4rem;
+}
+
+.title {
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.desc {
+  color: #aaa;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  max-width: 600px;
+  /* Animação para revelar aos poucos o texto */
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.item:hover .desc,
+.item:focus .desc,
+.item:active .desc {
+  max-height: 100px; /* Expande na altura */
+  opacity: 1;
+  margin-top: 0.2rem;
+}
+
+.platform {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,68 @@
+.container {
+  margin-inline: 1.5rem;
+}
+
+.container h4 {
+  display: flex;
+  align-items: center;
+  margin: 2rem auto;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 0.3px solid #2a2a2a;
+  width: fit-content;
+}
+
+.container h4 > span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #adff2f;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.container Button {
+  margin-block: 4rem 2.5rem;
+}
+
+.container h3 {
+  font-size: 4rem;
+  max-width: 53rem;
+  font-family: "Noto Sans", sans-serif;
+  margin: auto;
+}
+
+.container strong {
+  color: greenyellow;
+}
+
+.container p {
+  text-align: center;
+  margin-block: 2rem;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .container h3 {
+    font-size: 2.5rem;
+  }
+  .container h4 {
+    font-size: 0.9rem;
+  }
+  .buttonGroup {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
