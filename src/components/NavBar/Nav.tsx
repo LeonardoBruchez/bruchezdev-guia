@@ -7,10 +7,10 @@ export function Nav() {
         bruchez<strong>.dev</strong>
       </h1>
       <nav>
-        <a href="#trilhas">Trilhas</a>
-        <a href="#cursos">Cursos</a>
-        <a href="#dicas">Dicas</a>
-        <a href="#faculdade">Faculdade</a>
+        <a href="#Trilhas">Trilhas</a>
+        <a href="#Cursos">Cursos</a>
+        <a href="#Dicas">Dicas</a>
+        <a href="#Faculdade">Faculdade</a>
         <a href="#contato">Contato</a>
       </nav>
     </div>

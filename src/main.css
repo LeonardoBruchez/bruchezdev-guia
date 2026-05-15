@@ -15,7 +15,5 @@ body {
 
 a {
   text-decoration: none;
-}
-
-:root {
+  color: inherit;
 }

@@ -50,9 +50,16 @@ export function Footer() {
       </div>
 
       <div className={styles.bottomBar}>
-        <p>feito com ❤️ para a comunidade dev</p>
+        <p>feito para a comunidade dev</p>
         <p className={styles.brand}>
-          bruchez<strong>.dev</strong> 2025
+          <a
+            href="https://github.com/LeonardoBruchez"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            bruchez<strong>.dev</strong>
+          </a>{" "}
+          2025
         </p>
       </div>
     </footer>

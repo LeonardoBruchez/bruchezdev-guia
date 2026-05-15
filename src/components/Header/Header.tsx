@@ -24,10 +24,10 @@ export function Header() {
       </p>
       <div className={styles.buttonGroup}>
         <Button variant="verde" onClick={handleLearn}>
-          Começar trilha -&gt;
+          <a href="#Trilhas">Começar trilha -&gt;</a>
         </Button>
         <Button variant="cinza" onClick={handleLearn}>
-          Ver cursos grátis
+          <a href="#Cursos">Ver cursos grátis</a>
         </Button>
       </div>
     </header>

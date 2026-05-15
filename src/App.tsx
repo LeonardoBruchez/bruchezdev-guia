@@ -14,7 +14,7 @@ export function App() {
       <StatsBar />
 
       <Section
-        id="trilhas"
+        id="Trilhas"
         subtitle="TRILHAS DE ESTUDO"
         title="Por onde começar?"
       >
@@ -22,7 +22,7 @@ export function App() {
       </Section>
 
       <Section
-        id="cursos"
+        id="Cursos"
         subtitle="CURSOS GRATUITOS"
         title="Selecionados a dedo"
       >
@@ -30,7 +30,7 @@ export function App() {
       </Section>
 
       <Section
-        id="dicas"
+        id="Dicas"
         subtitle="DICAS GERAIS"
         title="O que ninguém te conta"
       >
@@ -38,7 +38,7 @@ export function App() {
       </Section>
 
       <Section
-        id="faculdade"
+        id="Faculdade"
         subtitle="VIDA NA FACULDADE"
         title="O que fazer durante o curso"
       >
