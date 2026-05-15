@@ -4,13 +4,43 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+/* src/main.css */
+
+/* Cores padrão (Modo Claro) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --text-color2: #5c5c5c;
+  --surface-color: #f5f5f5;
+  --border-color: #dddddd;
+  --primary-color: #007bff;
+  --bg-color-mid: #5c5c5c;
+  --text-color-green: #7acc00;
 }
 
+/* Cores quando o atributo data-theme for "dark" */
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #f1f1f1;
+  --surface-color: #2a2a2a;
+  --border-color: #444444;
+  --primary-color: #4da3ff;
+  --bg-color-mid: #111;
+  --text-color-green: #adff2f;
+}
+
+/* Aplicar as variáveis no body */
 body {
-  background-color: #0d0d0d;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* Adiciona uma transição suave ao trocar de tema */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {

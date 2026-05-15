@@ -3,8 +3,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 3rem 2.5rem;
-  border-top: 0.1px solid rgb(63, 63, 63);
-  border-bottom: 0.1px solid rgb(63, 63, 63);
+  border-top: 0.1px solid var(--border-color);
+  border-bottom: 0.1px solid var(--border-color);
   font-family: "Inter", sans-serif;
   margin-top: 4rem;
   flex-wrap: wrap;
@@ -14,7 +14,7 @@
 .stat h2 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #fff;
+  color: var(--text-color);
   display: flex;
   align-items: center;
   gap: 0.2rem;
@@ -25,7 +25,7 @@
 }
 
 .stat p {
-  color: #888;
+  color: var(--text-color);
   font-size: 0.9rem;
   margin-top: 0.5rem;
 }

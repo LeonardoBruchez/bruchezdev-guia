@@ -6,11 +6,24 @@ import { CourseList } from "./components/CourseList/CourseList";
 import { TipsCards } from "./components/TipsCards/TipsCards";
 import { PracticeCards } from "./components/PracticeCards/PracticeCards";
 import { Footer } from "./components/Footer/Footer";
+import { useEffect, useState } from "react";
 
 export function App() {
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || "dark";
+  });
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+  };
   return (
     <main>
-      <Header />
+      <Header toggleTheme={toggleTheme} theme={theme} />
       <StatsBar />
 
       <Section

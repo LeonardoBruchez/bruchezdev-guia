@@ -1,13 +1,18 @@
 import styles from "./Header.module.css";
 import { Nav } from "../NavBar/Nav";
 import { Button } from "../Buttons/Button";
-export function Header() {
+
+interface HeaderProps {
+  theme: string;
+  toggleTheme: () => void;
+}
+export function Header({ theme, toggleTheme }: HeaderProps) {
   const handleLearn = () => {
     console.log("O usuário clicou em aprender");
   };
   return (
     <header className={styles.container}>
-      <Nav />
+      <Nav theme={theme} toggleTheme={toggleTheme} />
       <h4>
         <span></span>Para quem está começando agora
       </h4>
