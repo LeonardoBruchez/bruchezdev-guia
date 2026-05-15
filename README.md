@@ -1,73 +1,79 @@
-# React + TypeScript + Vite
+# 🚀 bruchezDev.guia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **bruchezDev.guia**! Este projeto foi estruturado com o propósito de ser um ponto de partida definitivo para estudantes de programação e desenvolvedores **100% iniciantes**.
 
-Currently, two official plugins are available:
+Se você não sabe por onde começar, está perdido na quantidade de tecnologias ou apenas quer um caminho claro para seguir, você está no lugar certo!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Objetivo do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+A área de tecnologia é vasta e cheia de opções. O objetivo deste guia é organizar o conhecimento e oferecer **trilhas de estudo (roadmaps)** visuais e bem definidas para as principais áreas da programação: Front-end, Back-end, Análise de Dados e Mobile.
 
-## Expanding the ESLint configuration
+Em vez de perder tempo pesquisando "o que estudar depois de HTML", aqui você encontra o caminho estruturado.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛤️ Trilhas Disponíveis
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+No projeto, você vai interagir com cartões que te guiarão para roadmaps oficiais (utilizando a plataforma Roadmap.sh como base). As trilhas que você encontrará aqui são:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- 🖥️ **Front-end**: Do zero ao avançado. Aprenda a desenhar e dar vida às interfaces (HTML, CSS e JavaScript).
+- ⚙️ **Back-end**: Os bastidores dos sistemas. Focado em lógica, construção de APIs e Bancos de Dados usando Node.js ou Python.
+- 📊 **Dados**: O caminho para análise e manipulação de informações. Focado em Python, Pandas e habilidades essenciais para Data Analysts.
+- 📱 **Mobile**: A trilha para entrar no mundo dos aplicativos para celular através do React Native.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando um ecossistema moderno e performático do ecossistema JavaScript:
+
+- **React** com **TypeScript** - Construção de interfaces componentizadas e código seguro (tipado).
+- **Vite** - O empacotador (bundler) extremamente rápido para servir a aplicação.
+- **CSS Modules** - Para uma estilização em escopo isolado, mantendo a organização sem conflito de classes (ex: `Footer.module.css`).
+
+---
+
+## 💻 Como rodar o projeto na sua máquina
+
+Para você, estudante iniciante, ver o código rodando na sua máquina é o primeiro grande passo! Siga as instruções abaixo:
+
+### 1. Pré-requisitos
+
+Antes de começar, certifique-se de que você tem instalado no seu computador:
+
+- [Git](https://git-scm.com/downloads) (Para clonar o projeto)
+- [Node.js](https://nodejs.org/) (Necessário para rodar projetos JavaScript/React)
+
+### 2. Passo a Passo
+
+Abra o terminal do seu computador (Prompt de Comando, PowerShell ou terminal do VS Code) e rode os seguintes comandos:
+
+```bash
+# Clone este repositório para a sua máquina
+git clone https://github.com/LeonardoBruchez/bruchezDev.guia.git
+
+# Entre na pasta do projeto recém clonado
+cd bruchezDev.guia
+
+# Baixe todas as dependências necessárias para o projeto funcionar
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Pronto! Agora o terminal exibirá um link local (geralmente `http://localhost:5173/`). Segure a tecla `Ctrl` e clique nesse link (ou copie no seu navegador) para ver a aplicação funcionando!
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 💬 Vamos Conversar?
+
+Este projeto é feito para a comunidade. Se você teve alguma dúvida rodando o código, descobriu algum bug ou apenas quer bater um papo sobre carreira em tecnologia, sinta-se à vontade para entrar em contato:
+
+- **GitHub**: [LeonardoBruchez](https://github.com/LeonardoBruchez)
+- **LinkedIn**: [Leonardo Bruchez](https://www.linkedin.com/in/leonardo-bruchez-280635356/)
+- **E-mail**: bruchezleonardo@gmail.com
+
+> _"Feito com dedicação para a comunidade dev"_
