@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  color: var(--text-color);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #adff2f;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-right: 4rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #ff3366;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.disabled:hover {
+  transform: none;
+  border-color: var(--border-color);
+}
+
+.infoGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.comingSoon {
+  font-size: 0.85rem;
+  color: var(--text-novidadesWEEK);
+  font-weight: 500;
+  font-family: monospace;
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "titulo": "Artigo: Criando APIs com Node.js",
+    "link": "https://link...",
+    "dataPublicacao": "2026-05-14",
+    "isNovo": true
+  },
+  {
+    "id": 2,
+    "titulo": "Tutorial: Flexbox Interativo",
+    "link": "https://link...",
+    "dataPublicacao": "2026-05-01",
+    "isNovo": false
+  }
+]

@@ -63,7 +63,7 @@ export function PracticeCards() {
           <ul className={styles.list}>
             {practice.items.map((item, itemIdx) => (
               <li key={itemIdx}>
-                <span className={styles.check}>🔲</span> {item}
+                <span className={styles.check}>✅</span> {item}
               </li>
             ))}
           </ul>

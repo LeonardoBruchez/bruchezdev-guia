@@ -17,6 +17,7 @@ export function Nav({ theme, toggleTheme }: NavProps) {
           <a href="#Cursos">Cursos</a>
           <a href="#Dicas">Dicas</a>
           <a href="#Faculdade">Faculdade</a>
+          <a href="#Checklist">CheckList</a>
           <a href="#contato">Contato</a>
         </nav>
         <button

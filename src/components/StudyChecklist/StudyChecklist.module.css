@@ -1,0 +1,111 @@
+/* src/components/StudyChecklist/StudyChecklist.module.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.inputGroup Button {
+  margin: 0 !important; /* Corrige margens herdadas do seu botão base */
+}
+
+.input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #adff2f; /* Cor verdinha do seu layout */
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.empty {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.task.done {
+  opacity: 0.6;
+}
+
+.task.done .text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: #adff2f;
+  cursor: pointer;
+}
+
+.text {
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+  padding: 0.5rem;
+}
+
+.task:hover .deleteBtn {
+  opacity: 1;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .inputGroup {
+    flex-direction: column;
+  }
+}

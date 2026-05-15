@@ -1,3 +1,4 @@
+import { StudyChecklist } from "./components/StudyChecklist/StudyChecklist";
 import { Header } from "./components/Header/Header";
 import { StatsBar } from "./components/StatsBar/StatsBar";
 import { Section } from "./components/Section/Section";
@@ -7,6 +8,7 @@ import { TipsCards } from "./components/TipsCards/TipsCards";
 import { PracticeCards } from "./components/PracticeCards/PracticeCards";
 import { Footer } from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
+import { WeeklyResources } from "./components/WeeklyResources/WeeklyResources";
 
 export function App() {
   const [theme, setTheme] = useState(() => {
@@ -43,6 +45,14 @@ export function App() {
       </Section>
 
       <Section
+        id="Recursos"
+        subtitle="NOVIDADES DA ÁREA"
+        title="Recursos da Semana"
+      >
+        <WeeklyResources />
+      </Section>
+
+      <Section
         id="Dicas"
         subtitle="DICAS GERAIS"
         title="O que ninguém te conta"
@@ -58,6 +68,13 @@ export function App() {
         <PracticeCards />
       </Section>
 
+      <Section
+        id="Checklist"
+        subtitle="MEU DESENVOLVIMENTO"
+        title="Checklist de Estudos"
+      >
+        <StudyChecklist />
+      </Section>
       <Footer />
     </main>
   );

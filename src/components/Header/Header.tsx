@@ -1,21 +1,37 @@
 import styles from "./Header.module.css";
 import { Nav } from "../NavBar/Nav";
 import { Button } from "../Buttons/Button";
+import { useState, useEffect } from "react";
 
 interface HeaderProps {
   theme: string;
   toggleTheme: () => void;
 }
 export function Header({ theme, toggleTheme }: HeaderProps) {
+  const [terminalText, setTerminalText] = useState("");
+  const frase = "> iniciando sua jornada dev...";
+
+  useEffect(() => {
+    let i = 0;
+    const interval = setInterval(() => {
+      setTerminalText(frase.substring(0, i + 1));
+      i++;
+      if (i > frase.length) clearInterval(interval);
+    }, 100); // 100ms por letra
+    return () => clearInterval(interval);
+  }, []);
+
   const handleLearn = () => {
     console.log("O usuário clicou em aprender");
   };
+
   return (
     <header className={styles.container}>
       <Nav theme={theme} toggleTheme={toggleTheme} />
-      <h4>
-        <span></span>Para quem está começando agora
-      </h4>
+      <div className={styles.terminalBox}>
+        <span>{terminalText}</span>
+        <span className={styles.cursor}>|</span>
+      </div>
       <h3>
         <span>Construindo</span>{" "}
         <span>

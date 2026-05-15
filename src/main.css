@@ -16,6 +16,9 @@
   --primary-color: #007bff;
   --bg-color-mid: #5c5c5c;
   --text-color-green: #7acc00;
+  --bg-color-terminal: #ffffff;
+  --text-color-terminal: #333333;
+  --text-novidadesWEEK: #7c5506;
 }
 
 /* Cores quando o atributo data-theme for "dark" */
@@ -27,6 +30,9 @@
   --primary-color: #4da3ff;
   --bg-color-mid: #111;
   --text-color-green: #adff2f;
+  --bg-color-terminal: #111;
+  --text-color-terminal: #adff2f;
+  --text-novidadesWEEK: #ffbc38;
 }
 
 /* Aplicar as variáveis no body */
